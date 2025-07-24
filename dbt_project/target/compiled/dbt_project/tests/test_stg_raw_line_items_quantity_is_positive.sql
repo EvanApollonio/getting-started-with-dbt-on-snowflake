@@ -1,7 +1,0 @@
-with stg_raw_Line_items as (
-
-    select * from DBT_DEMO_DB.raw.stg_raw_line_items
-)
-select 1
-from stg_raw_Line_items
-where quantity > 0
