@@ -1,5 +1,5 @@
 
-  create or replace   view DBT_DEMO_DB.dev.stg_raw_orders
+  create or replace   view DBT_DEMO_DB.raw.stg_raw_orders
   
    as (
     with source as (

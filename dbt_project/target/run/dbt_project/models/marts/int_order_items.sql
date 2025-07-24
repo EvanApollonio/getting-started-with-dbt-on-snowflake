@@ -6,13 +6,13 @@
          as
         (with orders as (
     
-    select * from DBT_DEMO_DB.dev.stg_raw_orders
+    select * from DBT_DEMO_DB.raw.stg_raw_orders
 
 ),
 
 line_item as (
 
-    select * from DBT_DEMO_DB.dev.stg_raw_line_items
+    select * from DBT_DEMO_DB.raw.stg_raw_line_items
 
 )
 select 

@@ -17,6 +17,7 @@ snapshot-paths:
 models:
     dbt_project:
         staging:
+            schema: raw
             +materialized: view
         marts:
-            materialized: table
+            +materialized: table

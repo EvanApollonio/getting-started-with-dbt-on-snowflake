@@ -1,5 +1,5 @@
 
-  create or replace   view DBT_DEMO_DB.dev.stg_raw_line_items
+  create or replace   view DBT_DEMO_DB.raw.stg_raw_line_items
   
    as (
     with source as (

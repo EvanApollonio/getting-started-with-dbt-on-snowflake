@@ -6,4 +6,15 @@ sources:
     schema: tpch_sf1
     tables:
       - name: orders
+        loaded_at_field: created_at
+        freshness:
+            warn_after: {count: 12, period: hour}
+            error_after: {count: 24, period: hour}
       - name: lineitem
+      - name: customer
+        columns:
+            - name: c_custkey 
+              tests:
+                - not_null
+
+              
