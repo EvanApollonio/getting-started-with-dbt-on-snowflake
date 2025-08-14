@@ -11,3 +11,4 @@ select
     c_address as customer_address,
     c_mktsegment as market_segment
 from source
+

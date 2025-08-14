@@ -8,3 +8,9 @@ FROM DBT_DEMO_DB.RAW.STG_RAW_LINE_ITEMS limit 100;
 SELECT *
 FROM INFORMATICA_DEMO_DB.DEV.INT_ORDER_ITEMS
 where order_key = 2135463;
+
+
+select * from snowflake_sample_data.tpch_sf1.supplier;
+
+
+

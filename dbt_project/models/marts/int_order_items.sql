@@ -39,6 +39,7 @@ select
     -- We model discounts as negative amounts
     (-1 * l.extended_price * l.discount_percentage)::decimal(16,2) as item_discount_amount,
     l.tax_rate,
+    
     ((gross_item_sales_amount + item_discount_amount) * l.tax_rate)::decimal(16,2) as item_tax_amount,
     (
         gross_item_sales_amount + 

@@ -9,11 +9,11 @@ dbt_project:
       database: DBT_DEMO_DB
       schema: dev
       warehouse: COMPUTE_WH
-    # prod:
-    #   type: snowflake
-    #   account: 'not needed'
-    #   user: 'not needed'
-    #   role: accountadmin
-    #   database: DBT_DEMO_DB
-    #   schema: prod
-    #   warehouse: COMPUTE_WH
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: DBT_DEMO_DB
+      schema: prod
+      warehouse: COMPUTE_WH

@@ -4,4 +4,4 @@ with stg_raw_Line_items as (
 )
 select 1
 from stg_raw_Line_items
-where quantity > 0
+where quantity < 0
