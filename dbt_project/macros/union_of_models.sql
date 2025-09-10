@@ -1,4 +1,4 @@
--- dbt can handle dynamic sql generation much easier than informatica
+-- dbt can handle dynamic sql generation much 
 {% macro union_of_models(model_names)%}
     {% set sql_parts = [] %}
     {% for model in model_names %}
