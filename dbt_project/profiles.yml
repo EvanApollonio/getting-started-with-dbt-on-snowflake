@@ -7,13 +7,13 @@ dbt_project:
       user: 'not needed'
       role: accountadmin
       database: DBT_DEMO_DB
-      schema: dev
+      schema: DEV
       warehouse: COMPUTE_WH
     prod:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
-      database: DBT_DEMO_DB
+      database: PROD_DBT_DEMO_DB
       schema: prod
       warehouse: COMPUTE_WH

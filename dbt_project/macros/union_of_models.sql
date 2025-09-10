@@ -6,3 +6,5 @@
     {% endfor %}
     {{ sql_parts | join('\nunion all\n')}}
 {% endmacro %}
+
+
