@@ -1,1 +1,0 @@
-{{ get_model_row_count('fct_orders') }}

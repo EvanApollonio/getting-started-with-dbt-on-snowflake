@@ -6,11 +6,21 @@ sources:
     schema: tpch_sf1
     tables:
       - name: orders
+        columns:
+            - name: o_orderkey
+              tests:
+                - unique
+                - not_null
+                
       - name: lineitem
       - name: customer
         columns:
             - name: c_custkey 
               tests:
+                - unique:
+                    config:
+                        where: "C_MKTSEGMENT = BUILDING"
                 - not_null
 
+        
               
